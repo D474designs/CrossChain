@@ -22,7 +22,7 @@
 #### Instructions:
 ##### 3. SMN Front End Instructions
 
-1. Open http://xx.xx.xx.xx/dist in browser. xx.xx.xx.xx is server IP.
+1. Open http://xx.xx.xx.xx in browser. xx.xx.xx.xx is server IP.
 1. Create an administrator account, log in to the system.
 
    ![](images/1.png)
