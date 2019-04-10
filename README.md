@@ -2,7 +2,10 @@
 #### Description:
 - Cross-chain data testing on back end server and front end. After deployment is complete, testing may be performed in the SMN front end.
 ![](images/wtc_logo.jpg)
-
+1. Endorsement means uploading child chain data to the parent chain. Child chains cannot perform any changes. Block endorsement is obtaining hash for each child chain block. Business endorsement refers to a child chain business contract. Business contract is used to store specific business data on child chains. During endorsement, business data are obtained from a business contract.
+2. Endorsement contract is used to process child chain data and upload it to the parent chain. addEndorsement function serves to upload processed data to the parent chain, therefore parent chain has frequent upload transactions.
+3. "Reward" means profit from endorsing a data string. "SMN Count" stands for the number of SMNs which completed the endorsement. Therefore per-SMN reward shall be Reward/SMN Count.
+4. Workers are introduced to ensure SMN account safety: each endorsement transaction requires account private key for signature. Since SMN accounts have a lot of tokens, they are not suitable for transaction signing.
 #### Deployment
 ##### 1. Back End Deployment:
 1.  docker pull baoding/gwtc
